@@ -7,7 +7,7 @@ The Stack is a deckbuilder app for Magic the gathering. Simply use the search fe
 ## Getting Started
 https://the-stack-mtg.herokuapp.com/
 
-## Screenshots of Game
+## Screenshots
 ![alt text](public/images/home.png "Home")
 ![alt text](public/images/my-decklists.png "My Decklists")
 ![alt text](public/images/deck-list.png "Deck List")
