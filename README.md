@@ -2,6 +2,11 @@
 ## Description
 The Stack is a deckbuilder app for Magic the gathering. Simply use the search feature and add cards to your deck!
 
+*Note original app was developed in an enterprise git repository.
+
+## Getting Started
+https://the-stack-mtg.herokuapp.com/
+
 ## Screenshots of Game
 ![alt text](public/images/home.png "Home")
 ![alt text](public/images/my-decklists.png "My Decklists")
@@ -16,9 +21,6 @@ The Stack is a deckbuilder app for Magic the gathering. Simply use the search fe
 * Express
 * Node.js
 * Scryfall API
-
-## Getting Started
-https://the-stack-mtg.herokuapp.com/
 
 ## Future Enhancements
 * Refined card searching
