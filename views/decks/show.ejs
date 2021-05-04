@@ -1,0 +1,14 @@
+<%- include('../partials/header') %>
+
+<h1><%= deck.name %></h1>
+<a class="btn btn-dark" href="/decks/<%= deck._id %>/search">Add Cards</a>
+<br>
+<br>
+<h2>Decklist:</h2>
+<ul style="list-style-type: none; margin: 0; padding: 0;">
+    <% deck.cards.forEach(function(c) { %>
+        <li><%= c.name %> <%= c.manaCost %></li>
+    <% }); %>
+</ul>
+
+<%- include('../partials/footer') %>

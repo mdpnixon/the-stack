@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+
+<h1>My Decklists</h1>
+<br>
+<ul class="list-group-horizontal" style="list-style-type: none; margin: 0; padding: 0;">
+    <% decks.forEach(function(d) { %>
+      <form action="/decks/delete/<%= d._id %>" method="POST">
+        <li>
+          <%= d.name %> 
+          <a class="btn btn-dark" href="/decks/<%= d._id %>">Edit Deck</a> 
+          <button class="btn btn-danger" type="submit">Delete Deck</button>
+        </li>
+      </form>
+      <br>
+        <% }); %>
+</ul>
+
+<%- include('../partials/footer') %>

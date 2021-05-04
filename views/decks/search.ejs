@@ -1,0 +1,38 @@
+<%- include('../partials/header') %>
+
+<form class="row g-3 align-items-center" action="/decks/<%= deck._id %>/search" method="GET">
+    <div class="col-auto">
+        <label class="form-label">Card Search:</label>
+    </div>
+    <div class="col-auto">
+        <input class="form-control" type="text" name="name">
+    </div>
+    <div class="col-auto">
+        <input class="btn btn-dark" type="submit" value="Search">
+    </div>
+</form>
+<br>
+<% if (check) { %>
+    <% for (body of searched) { %>
+        <div class="container">
+            <div class="row row-cols-2">
+                <div class="col">
+                    <form action="/decks/<%= deck._id %>" method="POST">
+                        <p><%= body.name %></p>
+                        <p><%= body.mana_cost %></p>
+                        <p><%= body.type_line %></p>
+                        <button class="btn btn-dark">Add to Deck</button>
+                        <input type="hidden" name="name" value="<%= body.name %>">
+                        <input type="hidden" name="mana_cost" value="<%= body.mana_cost %>">
+                        <input type="hidden" name="type_line" value="<%= body.type_line %>">
+                    </form>
+                </div>
+                <div class="col"><img src="<%= body.image_uris.small %>"></div>
+            </div>
+        </div> 
+    <% } %>
+<% } else { %>
+    <h3>Search for a card!</h3>
+<% } %>
+
+<%- include('../partials/footer') %>

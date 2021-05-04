@@ -1,0 +1,29 @@
+body {
+  padding: 50px;
+  font: 28px "Gordita", Helvetica, Arial, sans-serif;
+  background-color: #8c9491;
+  background-image: url("https://imgur.com/APFQze3.png");
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #dc3545;
+}
+
+.nav-item {
+  font-size: medium;
+  margin-top: 10px;
+}
+
+.navbar-brand {
+  margin-top: -12px;
+}
+
+.logo {
+  width: 50px;
+  object-fit: contain;
+  margin-right: auto;
+}

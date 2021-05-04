@@ -1,0 +1,15 @@
+<%- include('../partials/header') %>
+
+<form class="row g-3" action="/decks" method="POST">
+    <div class="col-auto">
+        <label class="form-label">Deck Name:</label>
+    </div>
+    <div class="col-auto">
+        <input class="form-control" type="text" name="name">
+    </div>
+    <div class="col-auto">
+        <input class="btn btn-dark" type="submit" value="Create">
+    </div>
+</form>
+
+<%- include('../partials/footer') %>
